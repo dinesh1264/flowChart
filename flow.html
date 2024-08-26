@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mermaid Diagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white m-10">
+    <div>
+        <div class="my-10">
+            <p class="font-bold text-3xl">Resources</p>
+            <div class="mermaid">
+        
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+        
+                %%Web3%%
+                Cyfrin --> ka(Khan Academy) --> LearnWeb3.io --> dacade.org
+        
+            </div>
+        </div>
+        
+        <div class="mb-10">
+            <p class="font-bold text-3xl">Completed means green</p>
+            <div class="mermaid">
+                graph TB
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+                %%Info%%
+                Completed:::green
+                nt(Not Completed)
+            </div>
+        </div>
+        <p class="font-bold text-3xl">My Programming Stack Flow Chart</p>
+        <div class="mermaid">
+            graph LR
+
+            %%Colors%%
+            classDef blue fill:#2374f7,stroke:#000,stroke-width:2px,color:#fff
+            classDef grey fill:#65666F,stroke:#000,stroke-width:2px,color:#fff
+            classDef black fill:#0000,stroke:#000,stroke-width:2px,color:#fff
+            classDef pink fill:#eb3dd6,stroke:#000,stroke-width:2px,color:#fff
+            classDef orange fill:#fc822b,stroke:#000,stroke-width:2px,color:#fff
+            classDef red fill:#ed2633,stroke:#000,stroke-width:2px,color:#fff
+            classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+            classDef white fill:white,stroke:#000,stroke-width:2px,color:#000
+            classDef purple fill:#d8cff4,stroke:#000,stroke-width:2px,color:#fff
+            classDef brown fill:#CC9966, stroke:#000,stroke-width:2px, color:#fff
+
+            %%Programming%%
+            js(JavaScript):::green --> b(Blockchain basics):::green --> eth(solidity or vyper):::green --> hh(Hardhat)
+            js--> h&c(HTML and CSS):::green --> dom(DOM):::green --> react(React):::green
+            react --> n.js(next.js):::green --> tw(TailwindCSS):::green --> pr(Project)
+            eth --> foundry(Foundry) --> sec(Security) --> Audit(Auditing)
+            b --> solana(go or rust) --> foundry
+            solana --> hh
+            react --> tw --> ts(TypeScript):::green
+            react --> rr(React routing):::green
+            tw --> chakra(chakraUI):::green
+            tw --> Mat(MaterialUI)
+            foundry --> pr
+            hh --> pr --> bc(Boot Camp)
+            pr --> hack(Hackathon) --> jb(Job)
+            hack --> startup(Startup)
+            n.js --> UI/UX --> 3d(3D modelling) --> three.js --> gsap
+            js --> dsa(Data Structures and algorithm)
+        </div>
+
+        <div>
+            <p class="font-bold text-3xl mt-10">Maths Flow Chart</p>
+            <div class="mermaid">
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+                
+                %%Maths%%
+                ab(Algebra Basics) --> Algebra1 --> Algebra2 --> nt(Number Theory) --> Trignometry --> ss(High School Statistics)
+                Algebra2 --> Precalculas --> Calculus1 --> mc(Multivariable Calculus) --> de(Differential Equations) --> la(Linear Algebra) --> gt(Game Theory)
+                ab --> sg(High School Geometry) --> Trignometry
+                sg --> Precalculas --> dm(Discrete Maths)
+                ss --> ps(Probability and Statistics)
+                ba(Boolean Algebra):::green --> bari(Boolean Arithmetic):::green
+            </div>
+        </div>
+
+        <div class="mt-10 text-white">
+            <p class="font-bold text-3xl">Electronics Flow Chart</p>
+            <div class="mermaid">
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+
+                %%Electronics%%
+                de(Digital Electronics) -->ae(Analog Electronics) --> cs(Control Systems) --> cd(Circuit Design) --> mp&mc(Microprocessors and Microcontrollers)
+            </div>
+        </div>
+
+        <div class="mt-10 text-white">
+            <p class="font-bold text-3xl">Economics Flow Chart</p>
+            <div class="mermaid">
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+
+                %%Economics%%
+                Macroeconomics --> Microeconomics --> mt(Monetary Theory)
+            </div>
+            <p class="font-bold text-3xl mt-10">Finance Flow Chart</p>
+            <div class="mermaid">
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+                
+                %%Finance%%
+                cf(Corporate Finance) --> is(Investment Stratagies) --> defi(Decentralized Finance)
+            </div>
+            <p class="font-bold text-3xl mt-10">Cryptoeconomics</p>
+            <div class="mermaid">
+                graph LR
+                classDef green fill:#7fb366,stroke:#000,stroke-width:2px,color:#fff
+                
+                %%Crypto Economics%%
+                 msi(Money supply and Inflation) --> Cryptoeconomics --> Tokenomics
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+</body>
+
+</html>

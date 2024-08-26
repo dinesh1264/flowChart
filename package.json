@@ -1,0 +1,14 @@
+{
+  "name": "myflowdiagram",
+  "version": "1.0.0",
+  "description": "My flow diagram in meraid",
+  "main": "flow.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "me",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.9"
+  }
+}
